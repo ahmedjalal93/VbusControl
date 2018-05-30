@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">VbusControl</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="vehicle_make">
+        <item>Toyota</item>
+        <item>Ford</item>
+        <item>Hyundai</item>
+    </string-array>
+
+    <string-array name="Toyota_model">
+        <item>Camry</item>
+        <item>Corolla</item>
+        <item>Sienna</item>
+    </string-array>
+
+
+
+</resources>

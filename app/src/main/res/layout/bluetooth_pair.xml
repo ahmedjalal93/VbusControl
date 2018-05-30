@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list"
+        android:padding="10dp"
+        android:text="New devices"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="26sp" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?attr/colorButtonNormal"
+        tools:listitem="@android:layout/simple_list_item_1"
+        tools:theme="?attr/searchViewStyle"
+        android:layout_alignBottom="@+id/new_devices"></ListView>
+
+    <LinearLayout
+        android:id="@+id/paired_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/paired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/list2"
+            android:padding="10dp"
+            android:text="Paired devices"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="26sp" />
+
+        <ListView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorButtonNormal"
+            tools:listitem="@android:layout/simple_list_item_1"
+            tools:theme="?attr/searchViewStyle"
+            android:layout_alignBottom="@+id/list"></ListView>
+    </LinearLayout>
+
+
+</LinearLayout>
